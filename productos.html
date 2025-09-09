@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <header class="header-top" id="header-top">
+            <img src="./img/logo.png" alt="logo" class="logo">
+            <a href="index.html">
+                <h2>Inicio</h2>
+            </a>
+            <a href="productos.html">
+                <h2>Productos</h2>
+            </a>
+            <a href="servicios.html">
+                <h2>Servicios</h2>
+            </a>
+            <a href="consejos.html">
+                <h2>Consejos</h2>
+            </a>
+            <a href="importadas.html">
+                <h2>Importadas</h2>
+            </a>
+        </header>
+    </div>
+
+    <div class="contenedor">
+        <div class="ofertas">
+            <img src="./img/oferta.png" alt="off">
+        </div>
+
+        <div>
+            <h1 class="titulo">Productos</h1>
+        </div>
+
+        <div class="productos">
+            <div class="producto">
+                <img src="./img/cortadora.png" alt="1" class="imagen-producto">
+                <h3>Cortadora</h3>
+                <p>Corta el césped de forma rápida y eficiente. Esta cortadora es ligera y potente, ideal para mantener
+                    tu jardín impecable sin esfuerzo.</p>
+                <p id="precio">$299.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./img/podadora.png" alt="2" class="imagen-producto">
+                <h3>Podadora</h3>
+                <p>Dale forma a tus arbustos y setos con facilidad. La podadora está diseñada para un corte preciso y
+                    limpio, asegurando la salud y la estética de tus plantas.</p>
+                <p id="precio">$199.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./img/rastrillo.png" alt="3" class="imagen-producto">
+                <h3>Rastrillo</h3>
+                <p>Recoge hojas, ramas y escombros de manera sencilla. Con un diseño duradero y ergonómico, este
+                    rastrillo hará que la limpieza de tu jardín sea mucho más fácil y rápida.</p>
+                <p id="precio">$49.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./img/regadera.png" alt="4" class="imagen-producto">
+                <h3>Regadera</h3>
+                <p>Mantén tus plantas hidratadas con esta regadera. Su diseño simple y práctico te permite un riego
+                    controlado y uniforme, perfecto para flores y pequeños cultivos.</p>
+                <p id="precio">$14.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./img/tijera.png" alt="5" class="imagen-producto">
+                <h3>Tijera</h3>
+                <p>Ideal para trabajos detallados. Esta tijera de jardinería es afilada y cómoda de usar, perfecta para
+                    podar pequeñas ramas o cosechar tus hierbas.</p>
+                <p id="precio">$19.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./img/pala.png" alt="6" class="imagen-producto">
+                <h3>Trasplantadora</h3>
+                <p>Cambia tus plantas de maceta o lugar sin dañarlas. La trasplantadora tiene una pala delgada y
+                    resistente que facilita la extracción de las raíces, asegurando un trasplante exitoso.</p>
+                <p id="precio">$19.99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <img src="./img/logo.png" alt="logo" class="logo-footer">
+            <p>© 2025 Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(40, 128, 0);
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            width: 70px;
+            margin-right: 15px;
+            margin: 0;
+        }
+
+        .logo img {
+            width: 20%;
+            height: auto;
+        }
+
+        .header-top a {
+            font-size: 12px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .header-top a:hover {
+            color: #007BFF;
+        }
+
+        .ofertas img {
+            width: 100%;
+            height: 250px;
+            object-fit: fill;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 25px;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .titulo::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #007BFF;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .imagen-producto {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .producto h3 {
+            font-size: 1.25rem;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        .producto p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        #precio {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .btn-comprar {
+            background-color: rgb(40, 128, 0);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #00af09;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-footer {
+            height: 70px;
+            cursor: pointer;
+        }
+
+        .redes-sociales {
+            display: flex;
+            align-items: center;
+        }
+
+        .redes-sociales a img {
+            height: 29px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .redes-sociales a img:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            background: #288000;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .contenedor {
+                max-width: 1000px;
+                padding: 15px;
+            }
+
+            .header-top {
+                gap: 40px;
+                max-width: 100%;
+            }
+
+            .productos {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .menu-toggle {
+                display: flex;
+                animation: slideIn 2s ease forwards;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .header-top {
+                flex-direction: column;
+                gap: 0;
+                align-items: center;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100vw;
+                background: #fff;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                padding: 10px 10px;
+                z-index: 999;
+                display: flex;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-30px);
+                transition: opacity 0.4s, transform 0.4s;
+            }
+
+            .header-top.open {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0);
+            }
+
+            .header {
+                position: relative;
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header-top {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .logo {
+                width: 45px;
+                margin-right: 8px;
+            }
+
+            .contenedor {
+                max-width: 98vw;
+                padding: 5px;
+            }
+
+            .productos {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            .producto {
+                padding: 10px;
+            }
+
+            .imagen-producto {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
+            .titulo {
+                font-size: 1.2rem;
+                margin: 20px 0 10px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .logo-footer {
+                height: 50px;
+            }
+
+            .redes-sociales a img {
+                height: 22px;
+                margin: 0 6px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header-top h2 {
+                font-size: 1rem;
+            }
+
+            .producto h3 {
+                font-size: 1rem;
+            }
+
+            .producto p {
+                font-size: 0.8rem;
+            }
+
+            .btn-comprar {
+                font-size: 0.9rem;
+                padding: 8px 10px;
+            }
+
+            .logo {
+                width: 30px;
+            }
+        }
+
+        @media (max-width: 300px) {
+            .header-top h2 {
+                font-size: 0.8rem;
+            }
+
+            .producto h3 {
+                font-size: 0.8rem;
+            }
+
+            .producto p {
+                font-size: 0.7rem;
+            }
+
+            .btn-comprar {
+                font-size: 0.7rem;
+                padding: 6px 6px;
+            }
+
+            .logo {
+                width: 18px;
+            }
+        }
+    </style>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const headerTop = document.getElementById('header-top');
+
+        menuToggle.addEventListener('click', () => {
+            headerTop.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!menuToggle.contains(e.target) && !headerTop.contains(e.target)) {
+                headerTop.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+</html>
