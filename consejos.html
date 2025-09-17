@@ -42,31 +42,61 @@
         <div class="consejos">
             <div class="consejo">
                 <h3>Consejo 1</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/5qAamOTEk4s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Es importante regar las plantas por la mañana o al atardecer para evitar la evaporación rápida del
                     agua.</p>
             </div>
             <div class="consejo">
                 <h3>Consejo 2</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/lFAlXkWK9X0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Utiliza compost orgánico para mejorar la calidad del suelo y proporcionar nutrientes esenciales a tus
                     plantas.</p>
             </div>
             <div class="consejo">
                 <h3>Consejo 3</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/41xYP20W2mA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Poda regularmente tus plantas para fomentar un crecimiento saludable y eliminar las partes dañadas o
                     enfermas.</p>
             </div>
             <div class="consejo">
                 <h3>Consejo 4</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/g9IYQNHaWc0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Controla las plagas de manera natural utilizando insectos beneficiosos o soluciones caseras en lugar
                     de pesticidas químicos.</p>
             </div>
             <div class="consejo">
                 <h3>Consejo 5</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ic817iYwboI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Rotar los cultivos en tu jardín ayuda a prevenir enfermedades del suelo y mejora la fertilidad del
                     mismo.</p>
             </div>
             <div class="consejo">
                 <h3>Consejo 6</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/gcn_mUUjfbs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
                 <p>Elige plantas nativas de tu región, ya que están mejor adaptadas al clima y requieren menos
                     mantenimiento.</p>
             </div>
@@ -104,7 +134,7 @@
         }
 
         .contenedor {
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
             padding: 20px;
             flex-grow: 1;
@@ -140,6 +170,16 @@
             text-decoration: none;
         }
 
+
+        .consejo iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+
         .header-top a:hover {
             color: #007BFF;
         }
@@ -158,7 +198,7 @@
         .titulo {
             text-align: center;
             margin: 40px 0 20px;
-            font-size: 25px;
+            font-size: 40px;
             color: #ffffff;
             position: relative;
         }
@@ -195,13 +235,13 @@
         }
 
         .consejo h3 {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             margin-bottom: 5px;
             color: #000000;
         }
 
         .consejo p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #666;
             margin-bottom: 10px;
         }
@@ -270,10 +310,12 @@
                 max-width: 1000px;
                 padding: 15px;
             }
+
             .header-top {
                 gap: 40px;
                 max-width: 100%;
             }
+
             .consejos {
                 gap: 15px;
             }
@@ -285,7 +327,7 @@
                 animation: slideIn 2s ease forwards;
             }
 
-            .logo{
+            .logo {
                 display: none;
             }
 
@@ -298,7 +340,7 @@
                 left: 0;
                 width: 100vw;
                 background: #fff;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
                 padding: 10px 10px;
                 z-index: 999;
                 display: flex;
@@ -307,11 +349,13 @@
                 transform: translateY(-30px);
                 transition: opacity 0.4s, transform 0.4s;
             }
+
             .header-top.open {
                 opacity: 1;
                 pointer-events: auto;
                 transform: translateY(0);
             }
+
             .header {
                 position: relative;
             }
@@ -323,35 +367,43 @@
                 gap: 10px;
                 align-items: center;
             }
+
             .logo {
                 width: 45px;
                 margin-right: 8px;
             }
+
             .contenedor {
                 max-width: 98vw;
                 padding: 5px;
             }
+
             .consejos {
                 grid-template-columns: 1fr;
                 gap: 10px;
                 padding: 10px 0;
             }
+
             .consejo {
                 padding: 10px;
             }
+
             .titulo {
                 font-size: 1.2rem;
                 margin: 20px 0 10px;
             }
+
             .footer-inner {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
                 gap: 10px;
             }
+
             .logo-footer {
                 height: 50px;
             }
+
             .redes-sociales a img {
                 height: 22px;
                 margin: 0 6px;
@@ -362,12 +414,15 @@
             .header-top h2 {
                 font-size: 1rem;
             }
+
             .consejo h3 {
                 font-size: 1rem;
             }
+
             .consejo p {
                 font-size: 0.8rem;
             }
+
             .logo {
                 width: 30px;
             }
@@ -377,17 +432,32 @@
             .header-top h2 {
                 font-size: 0.8rem;
             }
+
             .consejo h3 {
                 font-size: 0.8rem;
             }
+
             .consejo p {
                 font-size: 0.7rem;
             }
+
             .logo {
                 width: 18px;
             }
         }
     </style>
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("header-top");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+    });
+</script>
+
+</body>
+
+</html>
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
@@ -404,5 +474,6 @@
         });
     </script>
 </body>
+
 
 </html>
