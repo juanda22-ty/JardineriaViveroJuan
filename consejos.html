@@ -350,7 +350,7 @@
                 transition: opacity 0.4s, transform 0.4s;
             }
 
-            .header-top.open {
+             .header-top.open {
                 opacity: 1;
                 pointer-events: auto;
                 transform: translateY(0);
@@ -459,21 +459,3 @@
 
 </html>
 
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const headerTop = document.getElementById('header-top');
-
-        menuToggle.addEventListener('click', () => {
-            headerTop.classList.toggle('open');
-        });
-
-        document.addEventListener('click', function(e) {
-            if (!menuToggle.contains(e.target) && !headerTop.contains(e.target)) {
-                headerTop.classList.remove('open');
-            }
-        });
-    </script>
-</body>
-
-
-</html>
